@@ -18,7 +18,7 @@ ALTERAÇÃO 1:
 <LINHA ORIGINAL> 23, 34, 117
 <NOME TESTE> 
 <CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long term list
+<SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder 
 					  aos dados do objeto (preserve hole object)
 <VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
@@ -44,71 +44,143 @@ ALTERAÇÃO 2:
 
 ALTERAÇÃO 3:
 
-<NOME CLASSE ORIGINAL>  
-<LINHA ORIGINAL> 
+<NOME CLASSE ORIGINAL> Aposta  
+<LINHA ORIGINAL> 84, 88 (pelo menos, verificar restantes sets e até o clone)
 <NOME TESTE> 
-<CODE SMELL>
-<SUBTIPO CODE SMELL>
-<TECNICA REFACTORING>
-<VANTAGENS>
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> dead code
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
+					  só era técnica se fosse eliminação de parâmetros
+					  e assim)
+<VANTAGENS> redução tamanho do código; suporte mais simples
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 4:
 
-<NOME CLASSE ORIGINAL>  
-<LINHA ORIGINAL> 
+<NOME CLASSE ORIGINAL> Equipa
+<LINHA ORIGINAL> 36, 40
 <NOME TESTE> 
-<CODE SMELL>
-<SUBTIPO CODE SMELL>
-<TECNICA REFACTORING>
-<VANTAGENS>
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> dead code
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
+					  só era técnica se fosse eliminação de parâmetros
+					  e assim)
+<VANTAGENS> redução tamanho do código; suporte mais simples
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 5:
 
-<NOME CLASSE ORIGINAL>  
-<LINHA ORIGINAL> 
+<NOME CLASSE ORIGINAL> EventoDesportivo
+<LINHA ORIGINAL> 26, 40, 139
 <NOME TESTE> 
-<CODE SMELL>
-<SUBTIPO CODE SMELL>
-<TECNICA REFACTORING>
-<VANTAGENS>
-<NOTAS>
+<CODE SMELL> bloaters
+<SUBTIPO CODE SMELL> long parameter list
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder 
+					  aos dados do objeto (preserve hole object)
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
+			visto antes
+<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe aposta 
+		(exemplo: dividir classe pessoa em pessoa e contactos)
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 6:
 
-<NOME CLASSE ORIGINAL>  
-<LINHA ORIGINAL> 
+<NOME CLASSE ORIGINAL> EventoDesportivo
+<LINHA ORIGINAL> 14
 <NOME TESTE> 
-<CODE SMELL>
-<SUBTIPO CODE SMELL>
-<TECNICA REFACTORING>
-<VANTAGENS>
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> data class
+<TECNICA REFACTORING> encapsulate field
+<VANTAGENS> melhora a legibilidade e organização do código.
+            Isolamento das operações sobre os dados isolados num determinado local. 
+            Ajuda a perceber se existe código duplicado.
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 7:
 
-<NOME CLASSE ORIGINAL>  
-<LINHA ORIGINAL> 
+<NOME CLASSE ORIGINAL> EventoDesportivo
+<LINHA ORIGINAL> 103, 107, 127, 131, 135
 <NOME TESTE> 
-<CODE SMELL>
-<SUBTIPO CODE SMELL>
-<TECNICA REFACTORING>
-<VANTAGENS>
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> dead code
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
+					  só era técnica se fosse eliminação de parâmetros
+					  e assim)
+<VANTAGENS> redução tamanho do código; suporte mais simples
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 8:
 
+<NOME CLASSE ORIGINAL> Jogador
+<LINHA ORIGINAL> 32, 119
+<NOME TESTE> 
+<CODE SMELL> bloaters
+<SUBTIPO CODE SMELL> long parameter list
+reunir a informação no objeto aposta e dentro do construtor aceder 
+					  aos dados do objeto (preserve hole object)
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
+			visto antes
+<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe aposta 
+		(exemplo: dividir classe pessoa em pessoa e contactos)
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 9:
+
+<NOME CLASSE ORIGINAL> Jogador
+<LINHA ORIGINAL> 14
+<NOME TESTE> 
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> data class
+<TECNICA REFACTORING> encapsulate field
+<VANTAGENS> melhora a legibilidade e organização do código.
+            Isolamento das operações sobre os dados isolados num determinado local. 
+            Ajuda a perceber se existe código duplicado.
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 10:
+
+<NOME CLASSE ORIGINAL> Liga
+<LINHA ORIGINAL> 24
+<NOME TESTE> 
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> dead code
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
+					  só era técnica se fosse eliminação de parâmetros
+					  e assim)
+<VANTAGENS> redução tamanho do código; suporte mais simples
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 11:
+
+<NOME CLASSE ORIGINAL> Notificação
+<LINHA ORIGINAL> 19, 48, 52
+<NOME TESTE> 
+<CODE SMELL> dispensables
+<SUBTIPO CODE SMELL> dead code
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
+					  só era técnica se fosse eliminação de parâmetros
+					  e assim)
+<VANTAGENS> redução tamanho do código; suporte mais simples
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 12:
+
 <NOME CLASSE ORIGINAL>  
 <LINHA ORIGINAL> 
 <NOME TESTE> 
@@ -119,3 +191,209 @@ ALTERAÇÃO 8:
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 13:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 14:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 15:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 16:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 17:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 18:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 19:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 20:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 21:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 22:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 23:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 24:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 25:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 26:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 27:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
+
+----------------------------------------------------------------------------------------
+
+ALTERAÇÃO 28:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<VANTAGENS>
+<NOTAS>
