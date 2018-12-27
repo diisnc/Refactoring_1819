@@ -13,13 +13,14 @@ FORMATO :  																				|
 
 ALTERAÇÃO 1:
 
-<NOME CLASSE ORIGINAL>  
-<LINHA ORIGINAL> 
+<NOME CLASSE ORIGINAL>  Aposta
+<LINHA ORIGINAL> 117
 <NOME TESTE> 
-<CODE SMELL>
-<SUBTIPO CODE SMELL>
-<TECNICA REFACTORING>
-<SUBTIPO TÉCNICA REFACTORING> 
+<CODE SMELL> bloaters
+<SUBTIPO CODE SMELL> long term list
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder aos dados do objeto (preserve hole object)
+
+Vantagens : código mais legível e mais curto; pode eliminar duplicados que não foram vistos antes
 
 ----------------------------------------------------------------------------------------
 
