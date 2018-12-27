@@ -8,20 +8,23 @@ FORMATO :  																				|
 <SUBTIPO CODE SMELL> 																	|
 <TECNICA REFACTORING> 																	|
 <SUBTIPO TÉCNICA REFACTORING> 															|
- 																						|
+<VANTAGENS> 															       			|
+<NOTAS> 																				|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 1:
 
-<NOME CLASSE ORIGINAL>  Aposta
-<LINHA ORIGINAL> 117
+<NOME CLASSE ORIGINAL> Aposta
+<LINHA ORIGINAL> 23, 34, 117
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long term list
-<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder aos dados do objeto (preserve hole object)
-
-Vantagens : código mais legível e mais curto; pode eliminar duplicados que não foram vistos antes
-
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder 
+					  aos dados do objeto (preserve hole object)
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
+			visto antes
+<NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe aposta 
+		(exemplo: dividir classe pessoa em pessoa e contactos)
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 2:
@@ -33,6 +36,8 @@ ALTERAÇÃO 2:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
 
@@ -45,6 +50,8 @@ ALTERAÇÃO 3:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
 
@@ -57,6 +64,8 @@ ALTERAÇÃO 4:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
 
@@ -69,6 +78,8 @@ ALTERAÇÃO 5:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
 
@@ -81,6 +92,8 @@ ALTERAÇÃO 6:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
 
@@ -93,6 +106,8 @@ ALTERAÇÃO 7:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
 
@@ -105,5 +120,7 @@ ALTERAÇÃO 8:
 <SUBTIPO CODE SMELL>
 <TECNICA REFACTORING>
 <SUBTIPO TÉCNICA REFACTORING> 
+<VANTAGENS>
+<NOTAS>
 
 ----------------------------------------------------------------------------------------
