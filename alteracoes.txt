@@ -1,37 +1,108 @@
 ----------------------------------------------------------------------------------------
-
-FORMATO : <NOME CLASSE ORIGINAL> | <LINHA ORIGINAL> | <NOME TESTE> | <CODE SMELL> | <SUBTIPO CODE SMELL> | <TECNICA(S) REFACTORING> 
-
+FORMATO :  																				|
+																						|
+<NOME CLASSE ORIGINAL>  																|
+<LINHA ORIGINAL> 																		|
+<NOME TESTE> 																			|
+<CODE SMELL> 																			|
+<SUBTIPO CODE SMELL> 																	|
+<TECNICA REFACTORING> 																	|
+<SUBTIPO TÉCNICA REFACTORING> 															|
+ 																						|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 1: 
+ALTERAÇÃO 1:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 2:
 
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
+
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 3:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 4:
 
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
+
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 5:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
 
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 6:
 
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
+
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 7:
 
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
+
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 8:
+
+<NOME CLASSE ORIGINAL>  
+<LINHA ORIGINAL> 
+<NOME TESTE> 
+<CODE SMELL>
+<SUBTIPO CODE SMELL>
+<TECNICA REFACTORING>
+<SUBTIPO TÉCNICA REFACTORING> 
 
 ----------------------------------------------------------------------------------------
