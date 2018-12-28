@@ -27,7 +27,7 @@ ALTERAÇÃO 1:
 		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 2:																			|
+ALTERAÇÃO 2: FEITA																		|
  																						|
 <NOME CLASSE ORIGINAL> Aposta  															|
 <LINHA ORIGINAL> 14 -> 21 																|
