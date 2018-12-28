@@ -32,14 +32,4 @@ public class Equipa implements Serializable{
         return designacao;
     }
     
-    /* SETTERS */
-    public void setId_liga(String id_liga) {
-        this.id_liga = id_liga;
-    }
-
-    public void setDesignacao(String designacao) {
-        this.designacao = designacao;
-    }
-    
-    
 }

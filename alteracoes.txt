@@ -19,12 +19,12 @@ ALTERAÇÃO 1:
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder 
-					  aos dados do objeto (preserve hole object)
-<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
-			visto antes
-<NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe aposta 
-		(exemplo: dividir classe pessoa em pessoa e contactos)
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
+					  aceder aos dados do objeto (preserve hole object)
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
+			foi visto antes
+<NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe 
+		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 2:
@@ -41,35 +41,35 @@ ALTERAÇÃO 2:
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 3:
-
-<NOME CLASSE ORIGINAL> Aposta  
-<LINHA ORIGINAL> 84, 88 (pelo menos, verificar restantes sets e até o clone)
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> dead code
-<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
-					  só era técnica se fosse eliminação de parâmetros
-					  e assim)
-<VANTAGENS> redução tamanho do código; suporte mais simples
-<NOTAS>
-
+																						|
+ALTERAÇÃO 3: FEITA 																		|
+ 																						|			
+<NOME CLASSE ORIGINAL> Aposta  															|
+<LINHA ORIGINAL> 84, 88, 92, 96 														|
+<NOME TESTE> 																			|
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> dead code 															|
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
+					  só era técnica se fosse eliminação de parâmetros 					|
+					  e assim) 															|
+<VANTAGENS> redução tamanho do código; suporte mais simples 							|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 4:
-
-<NOME CLASSE ORIGINAL> Equipa
-<LINHA ORIGINAL> 36, 40
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> dead code
-<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
-					  só era técnica se fosse eliminação de parâmetros
-					  e assim)
-<VANTAGENS> redução tamanho do código; suporte mais simples
-<NOTAS>
-
+																						|
+ALTERAÇÃO 4: FEITA 																		|
+																						|
+<NOME CLASSE ORIGINAL> Equipa 															|
+<LINHA ORIGINAL> 36, 40 																|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> dead code 															|
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
+					  só era técnica se fosse eliminação de parâmetros 					|
+					  e assim) 															|
+<VANTAGENS> redução tamanho do código; suporte mais simples 							|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 5:
@@ -79,12 +79,12 @@ ALTERAÇÃO 5:
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor aceder 
-					  aos dados do objeto (preserve hole object)
-<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
-			visto antes
-<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe aposta 
-		(exemplo: dividir classe pessoa em pessoa e contactos)
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
+					  aceder aos dados do objeto (preserve hole object)
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que 
+			não foi visto antes
+<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
+		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 
 ----------------------------------------------------------------------------------------
 
@@ -102,20 +102,20 @@ ALTERAÇÃO 6:
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 7:
-
-<NOME CLASSE ORIGINAL> EventoDesportivo
-<LINHA ORIGINAL> 103, 107, 127, 131, 135
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> dead code
-<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
-					  só era técnica se fosse eliminação de parâmetros
-					  e assim)
-<VANTAGENS> redução tamanho do código; suporte mais simples
-<NOTAS>
-
+																						|
+ALTERAÇÃO 7: FEITA 																		|
+ 																						|
+<NOME CLASSE ORIGINAL> EventoDesportivo 												|
+<LINHA ORIGINAL> 103, 107, 127, 131, 135 												|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> dead code 															|
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
+					  só era técnica se fosse eliminação de parâmetros 					|
+					  e assim) 															|
+<VANTAGENS> redução tamanho do código; suporte mais simples 							|
+<NOTAS> 																				|
+ 																						|	
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 8:
@@ -127,10 +127,10 @@ ALTERAÇÃO 8:
 <SUBTIPO CODE SMELL> long parameter list
 reunir a informação no objeto aposta e dentro do construtor aceder 
 					  aos dados do objeto (preserve hole object)
-<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não foi 
-			visto antes
-<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe aposta 
-		(exemplo: dividir classe pessoa em pessoa e contactos)
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
+			foi visto antes
+<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
+		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 
 ----------------------------------------------------------------------------------------
 
@@ -148,20 +148,20 @@ ALTERAÇÃO 9:
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 10:
-
-<NOME CLASSE ORIGINAL> Liga
-<LINHA ORIGINAL> 24
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> dead code
-<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
-					  só era técnica se fosse eliminação de parâmetros
-					  e assim)
-<VANTAGENS> redução tamanho do código; suporte mais simples
-<NOTAS>
-
+																						|
+ALTERAÇÃO 10: FEITA 																	|
+ 																						|
+<NOME CLASSE ORIGINAL> Liga 															| 
+<LINHA ORIGINAL> 24																		|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> dead code 															|
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
+					  só era técnica se fosse eliminação de parâmetros 					|
+					  e assim) 															|
+<VANTAGENS> redução tamanho do código; suporte mais simples 							|
+<NOTAS> 																				|
+ 																					 	|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 11:

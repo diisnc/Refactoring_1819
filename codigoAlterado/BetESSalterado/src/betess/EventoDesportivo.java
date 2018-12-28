@@ -100,14 +100,6 @@ public class EventoDesportivo implements Serializable{
     
     /* SETTERS */
 
-    public void setId_equipa_casa(String equipa_casa) {
-        this.equipa_casa = equipa_casa;
-    }
-
-    public void setId_equipa_fora(String equipa_fora) {
-        this.equipa_fora = equipa_fora;
-    }
-
     public void setEstado(String estado) {
         this.estado = estado;
     }
@@ -124,17 +116,6 @@ public class EventoDesportivo implements Serializable{
         this.empate = empate;
     }
 
-    public void setOdd_casa(double odd_casa) {
-        this.odd_casa = odd_casa;
-    }
-
-    public void setOdd_fora(double odd_fora) {
-        this.odd_fora = odd_fora;
-    }
-
-    public void setOdd_empate(double odd_empate) {
-        this.odd_empate = odd_empate;
-    }
     
     public EventoDesportivo clone(){
         return new EventoDesportivo(this.getId_evento(), this.getequipa_casa(), this.getequipa_fora(),

@@ -78,24 +78,7 @@ public class Aposta implements Serializable{
     }
     
     
-    
     /* SETTERS */
-
-    public void setId_aposta(int id_aposta) {
-        this.id_aposta = id_aposta;
-    }
-
-    public void setQuantia(double quantia) {
-        this.quantia = quantia;
-    }
-
-    public void setId_evento(int id_evento) {
-        this.id_evento = id_evento;
-    }
-
-    public void setId_jogador(String id_jogador) {
-        this.id_jogador = id_jogador;
-    }
 
     public void setGanha_casa(boolean ganha_casa) {
         this.ganha_casa = ganha_casa;

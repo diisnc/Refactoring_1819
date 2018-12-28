@@ -21,10 +21,6 @@ public class Liga implements Serializable{
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Liga clone(){
         return new Liga(this.getNome());
     }
