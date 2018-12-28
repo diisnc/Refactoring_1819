@@ -42,6 +42,17 @@ public class Aposta implements Serializable{
         this.estado = estado;
     }
     
+    public Aposta(Aposta ap){
+        this.id_aposta = ap.getId_aposta();
+        this.quantia = ap.getQuantia();
+        this.id_evento = ap.getId_evento();
+        this.id_jogador = ap.getId_jogador();
+        this.ganha_casa = ap.getGanha_casa();
+        this.ganha_fora = ap.getGanha_fora();
+        this.empate = ap.getEmpate();
+        this.estado = ap.getEstado();           
+    }
+    
     
 
     /* GETTERS */
@@ -96,7 +107,9 @@ public class Aposta implements Serializable{
         this.estado = estado;
     }
     
+    @Override
     public Aposta clone(){
-        return new Aposta(this.getId_aposta(), this.getQuantia(), this.getId_evento(), this.getId_jogador(), this.getGanha_casa(), this.getGanha_fora(), this.getEmpate(), this.getEstado());
+        return new Aposta(this);
     }
+    
 }
