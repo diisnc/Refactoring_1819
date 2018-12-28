@@ -26,20 +26,20 @@ ALTERAÇÃO 1:
 <NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe 
 		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 2:
-
-<NOME CLASSE ORIGINAL> Aposta 
-<LINHA ORIGINAL> 14 -> 21
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> data class
-<TECNICA REFACTORING> encapsulate field
-<VANTAGENS> melhora a legibilidade e organização do código.
-            Isolamento das operações sobre os dados isolados num determinado local. 
-            Ajuda a perceber se existe código duplicado.
-<NOTAS>
-
+																						|
+ALTERAÇÃO 2:																			|
+ 																						|
+<NOME CLASSE ORIGINAL> Aposta  															|
+<LINHA ORIGINAL> 14 -> 21 																|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> data class 														|
+<TECNICA REFACTORING> encapsulate field 												| 	
+<VANTAGENS> melhora a legibilidade e organização do código.								|
+            Isolamento das operações sobre os dados isolados num determinado local. 	|
+            Ajuda a perceber se existe código duplicado. 								|
+<NOTAS>																					|
+																						|
 ----------------------------------------------------------------------------------------
 																						|
 ALTERAÇÃO 3: FEITA 																		|
@@ -87,20 +87,20 @@ ALTERAÇÃO 5:
 		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 6:
-
-<NOME CLASSE ORIGINAL> EventoDesportivo
-<LINHA ORIGINAL> 14
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> data class
-<TECNICA REFACTORING> encapsulate field
-<VANTAGENS> melhora a legibilidade e organização do código.
-            Isolamento das operações sobre os dados isolados num determinado local. 
-            Ajuda a perceber se existe código duplicado.
-<NOTAS>
-
+																						|
+ALTERAÇÃO 6: FEITA																		|
+																						|
+<NOME CLASSE ORIGINAL> EventoDesportivo													|
+<LINHA ORIGINAL> 14 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables																|
+<SUBTIPO CODE SMELL> data class 														|
+<TECNICA REFACTORING> encapsulate field 												|
+<VANTAGENS> melhora a legibilidade e organização do código. 							|
+            Isolamento das operações sobre os dados isolados num determinado local.  	|
+            Ajuda a perceber se existe código duplicado. 								|
+<NOTAS> 																				|
+																						|
 ----------------------------------------------------------------------------------------
 																						|
 ALTERAÇÃO 7: FEITA 																		|
@@ -133,20 +133,20 @@ reunir a informação no objeto aposta e dentro do construtor aceder
 		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
 
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 9:
-
-<NOME CLASSE ORIGINAL> Jogador
-<LINHA ORIGINAL> 14
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> data class
-<TECNICA REFACTORING> encapsulate field
-<VANTAGENS> melhora a legibilidade e organização do código.
-            Isolamento das operações sobre os dados isolados num determinado local. 
-            Ajuda a perceber se existe código duplicado.
-<NOTAS>
-
+																						|
+ALTERAÇÃO 9: FEITA 																		|
+																						|
+<NOME CLASSE ORIGINAL> Jogador 															|
+<LINHA ORIGINAL> 14 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> data class 														|
+<TECNICA REFACTORING> encapsulate field 												|
+<VANTAGENS> melhora a legibilidade e organização do código. 							|
+            Isolamento das operações sobre os dados isolados num determinado local.  	|
+            Ajuda a perceber se existe código duplicado.								|
+<NOTAS> 																				|
+																						|
 ----------------------------------------------------------------------------------------
 																						|
 ALTERAÇÃO 10: FEITA 																	|

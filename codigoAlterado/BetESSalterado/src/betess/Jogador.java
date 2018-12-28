@@ -11,12 +11,12 @@ import java.util.*;
 
 
 public class Jogador implements Serializable{
-    public String email;
-    public String nome;
+    private String email;
+    private String nome;
     private String password;
-    public String contacto;
-    public double saldo;
-    public List<Notificacao> notificacoes;
+    private String contacto;
+    private double saldo;
+    private List<Notificacao> notificacoes;
 
     
     /* CONSTRUTOR */

@@ -11,16 +11,16 @@ import java.io.Serializable;
 
 public class EventoDesportivo implements Serializable{
     
-    public int id_evento;
-    public String equipa_casa;
-    public String equipa_fora;
-    public String estado;
-    public boolean ganha_casa;
-    public boolean ganha_fora;
-    public boolean empate;
-    public double odd_casa;
-    public double odd_fora;
-    public double odd_empate;
+    private int id_evento;
+    private String equipa_casa;
+    private String equipa_fora;
+    private String estado;
+    private boolean ganha_casa;
+    private boolean ganha_fora;
+    private boolean empate;
+    private double odd_casa;
+    private double odd_fora;
+    private double odd_empate;
     /* COLOCAMOS A HORA DO JOGO OU NÃO VALE A PENA? */
 
     public EventoDesportivo(int id_evento, String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double empate) {

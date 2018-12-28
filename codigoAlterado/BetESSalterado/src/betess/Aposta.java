@@ -11,14 +11,14 @@ import java.io.Serializable;
 
 public class Aposta implements Serializable{
     
-    public int id_aposta;
-    public double quantia;
-    public int id_evento;
-    public String id_jogador;
-    public boolean ganha_casa;
-    public boolean ganha_fora;
-    public boolean empate;
-    public String estado;
+    private int id_aposta;
+    private double quantia;
+    private int id_evento;
+    private String id_jogador;
+    private boolean ganha_casa;
+    private boolean ganha_fora;
+    private boolean empate;
+    private String estado;
 
     public Aposta(int id_aposta, double quantia, int id_evento, String id_jogador, boolean ganha_casa, boolean ganha_fora, boolean empate) {
         this.id_aposta = id_aposta;
