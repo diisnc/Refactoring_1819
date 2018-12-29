@@ -21,7 +21,7 @@ ALTERAÇÃO 1: (117 FEITO)
 <SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
 					  aceder aos dados do objeto (preserve hole object ou Introduce 
-					  Parameter Object)
+					  Parameter Object(construtor))
 <VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
 			foi visto antes
 <NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe 
@@ -82,7 +82,7 @@ ALTERAÇÃO 5: (139 FEITO)
 <SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
 					  aceder aos dados do objeto (preserve hole object ou Introduce 
-					  Parameter Object)
+					  Parameter Object(construtor))
 <VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que 
 			não foi visto antes
 <NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
@@ -119,25 +119,40 @@ ALTERAÇÃO 7: FEITA 																		|
 <NOTAS> 																				|
  																						|	
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 8: (119 FEITO)
-
-<NOME CLASSE ORIGINAL> Jogador
-<LINHA ORIGINAL> 32, 119
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TÉCNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
-					  aceder aos dados do objeto (preserve hole object ou Introduce
-					  Parameter Object)
-<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
-			foi visto antes
-<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
-		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
-
+																						|
+ALTERAÇÃO 8: FEITO 																		|
+ 																						|
+<NOME CLASSE ORIGINAL> Jogador 															|
+<LINHA ORIGINAL> 119 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TÉCNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 		|
+					  aceder aos dados do objeto (preserve hole object ou Introduce 	|
+					  Parameter Object) 												|
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 	|
+			foi visto antes 															|
+<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 		|
+		aposta (exemplo: dividir classe pessoa em pessoa e contactos) 					|
+ 																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 9: FEITA 																		|
+ALTERAÇÃO 9: FEITO 																		|
+ 																						|
+<NOME CLASSE ORIGINAL> Jogador 															| 
+<LINHA ORIGINAL> 32 																	|
+<NOME TESTE>  																			| 
+<CODE SMELL> dispensables 																|
+<SUBTIPO CODE SMELL> dead code 															|
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
+					  só era técnica se fosse eliminação de parâmetros 					|
+					  e assim) 															|
+<VANTAGENS> redução tamanho do código; suporte mais simples 							|
+<NOTAS> 																				|
+																						|
+----------------------------------------------------------------------------------------
+																						|
+ALTERAÇÃO 10: FEITA 																	|
 																						|
 <NOME CLASSE ORIGINAL> Jogador 															|
 <LINHA ORIGINAL> 14 																	|
@@ -152,7 +167,7 @@ ALTERAÇÃO 9: FEITA 																		|
 																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 10: FEITA 																	|
+ALTERAÇÃO 11: FEITA 																	|
  																						|
 <NOME CLASSE ORIGINAL> Liga 															| 
 <LINHA ORIGINAL> 24																		|
@@ -167,7 +182,7 @@ ALTERAÇÃO 10: FEITA 																	|
  																					 	|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 11:
+ALTERAÇÃO 12:
 
 <NOME CLASSE ORIGINAL> Notificação
 <LINHA ORIGINAL> 19, 48, 52
@@ -182,7 +197,7 @@ ALTERAÇÃO 11:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 12:
+ALTERAÇÃO 13:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 105
@@ -190,12 +205,11 @@ ALTERAÇÃO 12:
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
-<VANTAGENS>
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 13:
+ALTERAÇÃO 14:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 134
@@ -208,7 +222,7 @@ ALTERAÇÃO 13:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 14:
+ALTERAÇÃO 15:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -221,7 +235,7 @@ ALTERAÇÃO 14:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 15:
+ALTERAÇÃO 16:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 18
@@ -234,7 +248,7 @@ ALTERAÇÃO 15:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 16:
+ALTERAÇÃO 17:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -247,7 +261,7 @@ ALTERAÇÃO 16:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 17:
+ALTERAÇÃO 18:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -260,7 +274,7 @@ ALTERAÇÃO 17:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 18:
+ALTERAÇÃO 19:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -273,7 +287,7 @@ ALTERAÇÃO 18:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 19:
+ALTERAÇÃO 20:
 
 <NOME CLASSE ORIGINAL> Database
 <LINHA ORIGINAL> 112
@@ -286,7 +300,7 @@ ALTERAÇÃO 19:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 20:
+ALTERAÇÃO 21:
 
 <NOME CLASSE ORIGINAL> Database
 <LINHA ORIGINAL> 147
@@ -299,7 +313,7 @@ ALTERAÇÃO 20:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 21:
+ALTERAÇÃO 22:
 
 <NOME CLASSE ORIGINAL>  
 <LINHA ORIGINAL> 

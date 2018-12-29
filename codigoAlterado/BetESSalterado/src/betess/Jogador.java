@@ -11,10 +11,10 @@ import java.util.*;
 
 
 public class Jogador implements Serializable{
-    private String email;
-    private String nome;
-    private String password;
-    private String contacto;
+    private String email; //
+    private String nome; //
+    private String password; 
+    private String contacto; //
     private double saldo;
     private List<Notificacao> notificacoes;
 
@@ -27,15 +27,6 @@ public class Jogador implements Serializable{
         this.contacto = contacto;
         this.saldo = 5; /* CONSIDERAR A OFERTA DE SALDO PARA UM NOVO UTILIZADOR */
         this.notificacoes = new ArrayList ();
-    }
-
-    public Jogador(String email, String nome, String password, String contacto, double saldo, List<Notificacao> notificacoes) {
-        this.email = email;
-        this.nome = nome;
-        this.password = password;
-        this.contacto = contacto;
-        this.saldo = saldo;
-        this.notificacoes = notificacoes;
     }
     
     public Jogador(Jogador jog){
