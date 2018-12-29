@@ -20,7 +20,8 @@ ALTERAÇÃO 1: (117 FEITO)
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
-					  aceder aos dados do objeto (preserve hole object)
+					  aceder aos dados do objeto (preserve hole object ou Introduce 
+					  Parameter Object)
 <VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
 			foi visto antes
 <NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe 
@@ -80,7 +81,8 @@ ALTERAÇÃO 5: (139 FEITO)
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
-					  aceder aos dados do objeto (preserve hole object)
+					  aceder aos dados do objeto (preserve hole object ou Introduce 
+					  Parameter Object)
 <VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que 
 			não foi visto antes
 <NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
@@ -125,8 +127,9 @@ ALTERAÇÃO 8: (119 FEITO)
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-reunir a informação no objeto aposta e dentro do construtor aceder 
-					  aos dados do objeto (preserve hole object)
+<TÉCNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
+					  aceder aos dados do objeto (preserve hole object ou Introduce
+					  Parameter Object)
 <VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
 			foi visto antes
 <NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
@@ -186,7 +189,7 @@ ALTERAÇÃO 12:
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
 <VANTAGENS>
 <NOTAS>
 
@@ -199,7 +202,7 @@ ALTERAÇÃO 13:
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
 <VANTAGENS>
 <NOTAS>
 
@@ -250,7 +253,7 @@ ALTERAÇÃO 17:
 <LINHA ORIGINAL> 155
 <NOME TESTE> 
 <CODE SMELL> couplers
-<SUBTIPO CODE SMELL> feature envoy
+<SUBTIPO CODE SMELL> feature envy
 <TECNICA REFACTORING> move method / extract method
 <VANTAGENS>
 <NOTAS>
@@ -277,7 +280,7 @@ ALTERAÇÃO 19:
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
 <VANTAGENS>
 <NOTAS>
 
@@ -290,7 +293,7 @@ ALTERAÇÃO 20:
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
 <VANTAGENS>
 <NOTAS>
 
