@@ -50,6 +50,18 @@ public class EventoDesportivo implements Serializable{
         this.odd_empate = odd_empate;
     }
     
+    public EventoDesportivo(EventoDesportivo ev){
+        this.id_evento = ev.getId_evento();
+        this.equipa_casa = ev.getequipa_casa();
+        this.equipa_fora = ev.getequipa_fora();
+        this.estado = ev.getEstado();
+        this.ganha_casa = ev.getGanha_casa();
+        this.ganha_fora = ev.getGanha_fora();
+        this.empate = ev.getEmpate();
+        this.odd_casa = ev.getOdd_casa();
+        this.odd_fora = ev.getOdd_fora();
+        this.odd_empate = ev.getOdd_empate();
+    }
     
     
     /* GETTERS */
@@ -116,11 +128,9 @@ public class EventoDesportivo implements Serializable{
         this.empate = empate;
     }
 
-    
+    @Override 
     public EventoDesportivo clone(){
-        return new EventoDesportivo(this.getId_evento(), this.getequipa_casa(), this.getequipa_fora(),
-                this.getEstado(), this.getGanha_casa(), this.getGanha_fora(), this.getEmpate(), this.getOdd_casa(),
-                this.getOdd_fora(), this.getOdd_empate());
+        return new EventoDesportivo(this);
     }
     
 }

@@ -72,7 +72,7 @@ ALTERAÇÃO 4: FEITA 																		|
  																						|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 5: 
+ALTERAÇÃO 5: (139 FEITO)
 
 <NOME CLASSE ORIGINAL> EventoDesportivo
 <LINHA ORIGINAL> 26, 40, 139
@@ -118,7 +118,7 @@ ALTERAÇÃO 7: FEITA 																		|
  																						|	
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 8:
+ALTERAÇÃO 8: (119 FEITO)
 
 <NOME CLASSE ORIGINAL> Jogador
 <LINHA ORIGINAL> 32, 119

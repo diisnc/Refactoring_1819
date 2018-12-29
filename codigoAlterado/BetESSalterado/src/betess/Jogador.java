@@ -38,6 +38,14 @@ public class Jogador implements Serializable{
         this.notificacoes = notificacoes;
     }
     
+    public Jogador(Jogador jog){
+        this.email = jog.getEmail();
+        this.nome = jog.getNome();
+        this.password = jog.getPassword();
+        this.contacto = jog.getContacto();
+        this.saldo = jog.getSaldo();
+        this.notificacoes = jog.getNotificacoes();
+    }
     
     
     /* GETTERS */
@@ -116,7 +124,8 @@ public class Jogador implements Serializable{
         }
     }
     
+    @Override
     public Jogador clone(){
-        return new Jogador(this.getEmail(), this.getNome(), this.getPassword(), this.getContacto(), this.getSaldo(), this.getNotificacoes());
+        return new Jogador(this);
     }
 }
