@@ -42,17 +42,7 @@ public class Notificacao implements Serializable{
         return status;
     }
     
-    
-    /* SETTERS */
 
-    public void setId_aposta(int id_aposta) {
-        this.id_aposta = id_aposta;
-    }
-
-    public void setBalanco(double balanco) {
-        this.balanco = balanco;
-    }
-    
     public void marcarLida(){
         this.status = "Lida";
     }

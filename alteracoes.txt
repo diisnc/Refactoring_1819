@@ -12,7 +12,7 @@ FORMATO :  																				|
 <NOTAS> 																				|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 1: (117 FEITO)
+ALTERAÇÃO 1: (34 e 117 FEITO)
 
 <NOME CLASSE ORIGINAL> Aposta
 <LINHA ORIGINAL> 23, 34(novo dead code), 117
@@ -73,7 +73,7 @@ ALTERAÇÃO 4: FEITA 																		|
  																						|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 5: (139 FEITO)
+ALTERAÇÃO 5: (40 e 139 FEITO)
 
 <NOME CLASSE ORIGINAL> EventoDesportivo
 <LINHA ORIGINAL> 26, 40(novo dead code), 139
@@ -166,20 +166,20 @@ ALTERAÇÃO 10: FEITA 																	|
 <NOTAS> 																				|
  																					 	|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 11:
-
-<NOME CLASSE ORIGINAL> Notificação
-<LINHA ORIGINAL> 19, 48, 52
-<NOME TESTE> 
-<CODE SMELL> dispensables
-<SUBTIPO CODE SMELL> dead code
-<TECNICA REFACTORING> simples eliminação de código (não é bem técnica,
-					  só era técnica se fosse eliminação de parâmetros
-					  e assim)
-<VANTAGENS> redução tamanho do código; suporte mais simples
-<NOTAS>
-
+																						|
+ALTERAÇÃO 11: FEITA 																	|
+ 																						|
+<NOME CLASSE ORIGINAL> Notificação 														|
+<LINHA ORIGINAL> 48, 52 																|
+<NOME TESTE>  																			|
+<CODE SMELL> dispensables 																|													
+<SUBTIPO CODE SMELL> dead code 															|
+<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
+					  só era técnica se fosse eliminação de parâmetros 					|
+					  e assim) 															|
+<VANTAGENS> redução tamanho do código; suporte mais simples 							|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 12:
