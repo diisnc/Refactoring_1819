@@ -21,7 +21,6 @@ public class EventoDesportivo implements Serializable{
     private double odd_casa;
     private double odd_fora;
     private double odd_empate;
-    /* COLOCAMOS A HORA DO JOGO OU NÃO VALE A PENA? */
 
     public EventoDesportivo(int id_evento, String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double empate) {
         this.id_evento = id_evento;
@@ -36,20 +35,6 @@ public class EventoDesportivo implements Serializable{
         this.odd_empate = empate;
     }
 
-    /* construtor utilizado no clone */
-    public EventoDesportivo(int id_evento, String equipa_casa, String equipa_fora, String estado, boolean ganha_casa, boolean ganha_fora, boolean empate, double odd_casa, double odd_fora, double odd_empate) {
-        this.id_evento = id_evento;
-        this.equipa_casa = equipa_casa;
-        this.equipa_fora = equipa_fora;
-        this.estado = estado;
-        this.ganha_casa = ganha_casa;
-        this.ganha_fora = ganha_fora;
-        this.empate = empate;
-        this.odd_casa = odd_casa;
-        this.odd_fora = odd_fora;
-        this.odd_empate = odd_empate;
-    }
-    
     public EventoDesportivo(EventoDesportivo ev){
         this.id_evento = ev.getId_evento();
         this.equipa_casa = ev.getequipa_casa();
@@ -105,8 +90,6 @@ public class EventoDesportivo implements Serializable{
     public double getOdd_empate() {
         return odd_empate;
     }
-    
-    
     
     
     

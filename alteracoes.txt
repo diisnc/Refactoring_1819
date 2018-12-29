@@ -15,7 +15,7 @@ FORMATO :  																				|
 ALTERAÇÃO 1: (117 FEITO)
 
 <NOME CLASSE ORIGINAL> Aposta
-<LINHA ORIGINAL> 23, 34, 117
+<LINHA ORIGINAL> 23, 34(novo dead code), 117
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
@@ -76,7 +76,7 @@ ALTERAÇÃO 4: FEITA 																		|
 ALTERAÇÃO 5: (139 FEITO)
 
 <NOME CLASSE ORIGINAL> EventoDesportivo
-<LINHA ORIGINAL> 26, 40, 139
+<LINHA ORIGINAL> 26, 40(novo dead code), 139
 <NOME TESTE> 
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
@@ -123,7 +123,7 @@ ALTERAÇÃO 7: FEITA 																		|
 ALTERAÇÃO 8: FEITO 																		|
  																						|
 <NOME CLASSE ORIGINAL> Jogador 															|
-<LINHA ORIGINAL> 119 																	|
+<LINHA ORIGINAL> 32(novo dead code), 119 												|
 <NOME TESTE>  																			|
 <CODE SMELL> bloaters 																	|
 <SUBTIPO CODE SMELL> long parameter list 												|
@@ -137,22 +137,7 @@ ALTERAÇÃO 8: FEITO 																		|
  																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 9: FEITO 																		|
- 																						|
-<NOME CLASSE ORIGINAL> Jogador 															| 
-<LINHA ORIGINAL> 32 																	|
-<NOME TESTE>  																			| 
-<CODE SMELL> dispensables 																|
-<SUBTIPO CODE SMELL> dead code 															|
-<TECNICA REFACTORING> simples eliminação de código (não é bem técnica, 					|
-					  só era técnica se fosse eliminação de parâmetros 					|
-					  e assim) 															|
-<VANTAGENS> redução tamanho do código; suporte mais simples 							|
-<NOTAS> 																				|
-																						|
-----------------------------------------------------------------------------------------
-																						|
-ALTERAÇÃO 10: FEITA 																	|
+ALTERAÇÃO 9: FEITA 													 					|
 																						|
 <NOME CLASSE ORIGINAL> Jogador 															|
 <LINHA ORIGINAL> 14 																	|
@@ -167,7 +152,7 @@ ALTERAÇÃO 10: FEITA 																	|
 																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 11: FEITA 																	|
+ALTERAÇÃO 10: FEITA 																	|
  																						|
 <NOME CLASSE ORIGINAL> Liga 															| 
 <LINHA ORIGINAL> 24																		|
@@ -182,7 +167,7 @@ ALTERAÇÃO 11: FEITA 																	|
  																					 	|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 12:
+ALTERAÇÃO 11:
 
 <NOME CLASSE ORIGINAL> Notificação
 <LINHA ORIGINAL> 19, 48, 52
@@ -197,7 +182,7 @@ ALTERAÇÃO 12:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 13:
+ALTERAÇÃO 12:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 105
@@ -209,7 +194,7 @@ ALTERAÇÃO 13:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 14:
+ALTERAÇÃO 13:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 134
@@ -222,7 +207,7 @@ ALTERAÇÃO 14:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 15:
+ALTERAÇÃO 14:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -235,7 +220,7 @@ ALTERAÇÃO 15:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 16:
+ALTERAÇÃO 15:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 18
@@ -248,7 +233,7 @@ ALTERAÇÃO 16:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 17:
+ALTERAÇÃO 16:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -261,7 +246,7 @@ ALTERAÇÃO 17:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 18:
+ALTERAÇÃO 17:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -274,7 +259,7 @@ ALTERAÇÃO 18:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 19:
+ALTERAÇÃO 18:
 
 <NOME CLASSE ORIGINAL> BetESS
 <LINHA ORIGINAL> 155
@@ -287,7 +272,7 @@ ALTERAÇÃO 19:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 20:
+ALTERAÇÃO 19:
 
 <NOME CLASSE ORIGINAL> Database
 <LINHA ORIGINAL> 112
@@ -300,7 +285,7 @@ ALTERAÇÃO 20:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 21:
+ALTERAÇÃO 20:
 
 <NOME CLASSE ORIGINAL> Database
 <LINHA ORIGINAL> 147
@@ -313,7 +298,7 @@ ALTERAÇÃO 21:
 
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 22:
+ALTERAÇÃO 21:
 
 <NOME CLASSE ORIGINAL>  
 <LINHA ORIGINAL> 
