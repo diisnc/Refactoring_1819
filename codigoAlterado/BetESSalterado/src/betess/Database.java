@@ -214,4 +214,81 @@ public class Database implements Serializable{
     public void removeAposta(int id) {
         this.apostas.remove(id);
     }
+    
+        public void atualizaSaldoAposta(EventoDesportivo e, Aposta a, double saldo){
+        double odd = e.getOdd_casa();
+        saldo += odd * a.getQuantia();
+    }
+    
+    public void lancaNotificacao(Aposta a, double balanco, Jogador jogador){
+        Notificacao n = new Notificacao(a.getId_aposta(), balanco);
+        jogador.adicionaNotificacao(n);
+        registaJogador(jogador);
+    }
+    
+    public void atualizaDadosAposta(Aposta a){
+        a.setEstado("Paga");
+        atualizaAposta(a);
+    }
+    
+    public boolean verificaAposta(EventoDesportivo e, Aposta a){
+        return e.getGanha_casa() == a.getGanha_casa() &&
+               e.getGanha_fora() == a.getGanha_fora() &&
+               e.getEmpate() == a.getEmpate();
+    }
+    
+    public void trataAposta(EventoDesportivo e, Aposta a, double saldo){   
+        
+        if (verificaAposta(e, a)) {
+            
+            if (e.getGanha_casa()){
+                    atualizaSaldoAposta(e, a, saldo);
+            }
+            else if (e.getGanha_fora()){
+                atualizaSaldoAposta(e, a, saldo);
+
+            }
+            else if (e.getEmpate()){
+                atualizaSaldoAposta(e, a, saldo);
+            }
+        }
+    }
+    
+    public void trataApostasEvento(EventoDesportivo e){
+        for (Aposta a : getApostasEvento(e.getId_evento())){
+                
+            if ( e != null && e.getEstado().equals("Aberto")){
+                
+                Jogador j = checkUser(a.getId_jogador());
+                double saldo = j.getSaldo();
+                double saldo_ant = saldo;
+                
+                trataAposta(e, a, saldo);
+                
+                atualizaDadosAposta(a);
+                
+                /* lançamento de notificações */
+                lancaNotificacao(a, saldo - saldo_ant, j);
+                
+                /* atualização do saldo do cliente */
+                updateSaldo(j.getEmail(), saldo);
+            }
+        }
+    }
+    
+    public void atualizaDadosEvento(EventoDesportivo e){
+        e.setEstado("Terminado");
+        atualizaEventoDesportivo(e);
+    }
+    
+    /* método que tratará do fecho de um evento desportivo com o respetivo pagamento das apostas referentes a esse */
+    public void fechaEvento(int id_Evento, boolean ganha_casa, boolean ganha_fora, boolean empate){
+        
+        EventoDesportivo e = getEventoDesportivo(id_Evento);      
+        e.setResultadoEvento(ganha_casa, ganha_fora, empate);
+        
+        trataApostasEvento(e);
+        
+        atualizaDadosEvento(e);
+    }
 }

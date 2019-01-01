@@ -209,7 +209,7 @@ ALTERAÇÃO 13:
 
 ALTERAÇÃO 14:
 
-<NOME CLASSE ORIGINAL> BetESS
+<NOME CLASSE ORIGINAL> BetESS (podemos remover este pois fala em mais do que 3/4 e temos 4)
 <LINHA ORIGINAL> 155
 <NOME TESTE> 
 <CODE SMELL> bloaters
@@ -228,7 +228,9 @@ ALTERAÇÃO 15:
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long method
 <TECNICA REFACTORING> extract method / replace with query
-<VANTAGENS>
+<VANTAGENS> melhoria da legibilidade de código principalmente mas também eliminação de 
+			possíveis locais de bugs (uma vez que o método se pode tornar confuso devido
+			à sua dimensão)
 <NOTAS>
 
 ----------------------------------------------------------------------------------------

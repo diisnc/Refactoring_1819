@@ -110,6 +110,12 @@ public class EventoDesportivo implements Serializable{
     public void setEmpate(boolean empate) {
         this.empate = empate;
     }
+    
+    public void setResultadoEvento(boolean ganha_casa, boolean ganha_fora, boolean empate){
+        this.setGanha_casa(ganha_casa);
+        this.setGanha_fora(ganha_fora);
+        this.setEmpate(empate);
+    }
 
     @Override 
     public EventoDesportivo clone(){
