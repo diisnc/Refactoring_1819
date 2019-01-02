@@ -9,6 +9,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
+import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -662,6 +663,18 @@ public class AreaCliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void mostraPainel(JPanel c){
+        /* remoção de paineis anteriores */
+        options_panel.removeAll();
+        options_panel.repaint();
+        options_panel.revalidate();
+        
+        /* alocação do respetivo painel de opções */
+        options_panel.add(c);
+        options_panel.repaint();
+        options_panel.revalidate();
+    }
+    
     private void editar_perfil_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editar_perfil_buttonActionPerformed
         Jogador autenticado = this.betess.checkUser(this.betess.getId_utilizador_aut());
         
@@ -669,29 +682,11 @@ public class AreaCliente extends javax.swing.JFrame {
         email_field.setText(autenticado.getEmail());
         contacto_field.setText(autenticado.getContacto());
         
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(edit_perfil_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        
+        mostraPainel(edit_perfil_elements);
     }//GEN-LAST:event_editar_perfil_buttonActionPerformed
 
     private void ver_apostas_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ver_apostas_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(apostas_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(apostas_elements);
         
         List<Aposta> apostas = this.betess.getApostasJogador(this.betess.getId_utilizador_aut());
         
@@ -710,15 +705,7 @@ public class AreaCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_ver_apostas_buttonActionPerformed
 
     private void apostar_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apostar_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(apostar_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(apostar_elements);
         
         Map<Integer, EventoDesportivo> eventos = this.betess.getEventosDesportivos();
         
@@ -796,8 +783,15 @@ public class AreaCliente extends javax.swing.JFrame {
                 }
 
                 if (aposta_permitida){
-                    this.betess.registaAposta(Double.parseDouble(quantia_field.getText()), id_evento, user, casa_selected, fora_selected, empate_selected);
-
+                    
+                    Aposta a = new Aposta();
+                    a.setQuantia(Double.parseDouble(quantia_field.getText()));
+                    a.setId_evento(id_evento);
+                    a.setId_jogador(user);
+                    a.setGanha_casa(casa_selected);
+                    a.setGanha_fora(fora_selected);
+                    a.setEmpate(empate_selected);
+                    
                     JOptionPane.showMessageDialog(null, "Aposta registada com sucesso.", "BetESS", JOptionPane.PLAIN_MESSAGE);
                 }
                 else {
@@ -885,15 +879,7 @@ public class AreaCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_descartar_buttonActionPerformed
 
     private void notificacoes_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificacoes_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(notificacoes_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(notificacoes_elements);
         
         Jogador j = this.betess.checkUser(this.betess.getId_utilizador_aut());
         
@@ -924,15 +910,7 @@ public class AreaCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_logout_buttonActionPerformed
 
     private void creditos_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_creditos_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(creditos_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(creditos_elements);
         
         DecimalFormat dc = new DecimalFormat("0.00");
         

@@ -109,14 +109,14 @@ public class Database implements Serializable{
         return res;
     }
     
-    public void registaAposta(double quantia, int id_evento, String id_jogador, boolean ganha_casa, boolean ganha_fora, boolean empate){
-        Aposta a = new Aposta(this.cont_apostas++, quantia, id_evento, id_jogador, ganha_casa, ganha_fora, empate);
+    public void registaAposta(Aposta a){
+        a.setId_aposta(cont_apostas++);
         this.apostas.put(a.getId_aposta(), a);
-        Jogador j = this.jogadores.get(id_jogador);
+        Jogador j = this.jogadores.get(a.getId_jogador());
         double saldo_atual = j.getSaldo();
-        double novo_saldo = saldo_atual - quantia;
+        double novo_saldo = saldo_atual - a.getQuantia();
         j.setSaldo(novo_saldo);
-        this.jogadores.put(id_jogador, j);
+        this.jogadores.put(a.getId_jogador(), j);
     }
     
     public Jogador checkUser(String username){
@@ -144,8 +144,8 @@ public class Database implements Serializable{
         this.apostas.put(a.getId_aposta(), a);
     }
     
-    public void registaEventoDesportivo(String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double odd_empate){
-        EventoDesportivo e = new EventoDesportivo(this.cont_eventos++, equipa_casa, equipa_fora, odd_casa, odd_fora, odd_empate);
+    public void registaEventoDesportivo(EventoDesportivo e){
+        e.setId_evento(cont_eventos++);
         this.eventos.put(e.getId_evento(), e);
     }
     

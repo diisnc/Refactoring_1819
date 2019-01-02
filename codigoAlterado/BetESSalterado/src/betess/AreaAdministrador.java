@@ -9,6 +9,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
+import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -764,16 +765,20 @@ public class AreaAdministrador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void eventos_desportivos_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eventos_desportivos_buttonActionPerformed
+    private void mostraPainel(JPanel c){
         /* remoção de paineis anteriores */
         options_panel.removeAll();
         options_panel.repaint();
         options_panel.revalidate();
         
         /* alocação do respetivo painel de opções */
-        options_panel.add(eventos_desportivos_elements);
+        options_panel.add(c);
         options_panel.repaint();
         options_panel.revalidate();
+    }
+    
+    private void eventos_desportivos_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eventos_desportivos_buttonActionPerformed
+        mostraPainel(eventos_desportivos_elements);
         
         DefaultTableModel model = (DefaultTableModel) eventos_lista.getModel();
         
@@ -789,15 +794,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_eventos_desportivos_buttonActionPerformed
 
     private void ver_jogadores_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ver_jogadores_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(ver_jogadores_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(ver_jogadores_elements);
         
         HashMap<String, Jogador> jogadores = this.betess.getJogadores();
         
@@ -814,15 +811,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_ver_jogadores_buttonActionPerformed
 
     private void apostas_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apostas_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(apostas_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(apostas_elements);
         
         HashMap<Integer, Aposta> apostas = this.betess.getApostas();
         
@@ -902,27 +891,11 @@ public class AreaAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_elimina_apostaActionPerformed
 
     private void fechar_evento_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechar_evento_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(fechar_evento_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(fechar_evento_elements);
     }//GEN-LAST:event_fechar_evento_buttonActionPerformed
 
     private void registar_evento_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registar_evento_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(novo_evento_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(novo_evento_elements);
         
         List<Equipa> equipas = this.betess.getEquipas();
         
@@ -954,7 +927,13 @@ public class AreaAdministrador extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Não é possível definir um evento apenas com uma equipa.", "Falha no registo do evento desportivo", ERROR_MESSAGE);
             }
             else {
-                this.betess.registaEventoDesportivo(c_casa, c_fora, Double.parseDouble(odd_casa), Double.parseDouble(odd_fora), Double.parseDouble(odd_empate));
+                EventoDesportivo e = new EventoDesportivo();
+                e.setEquipa_casa(c_casa);
+                e.setEquipa_fora(c_fora);
+                e.setOdd_casa(Double.parseDouble(odd_casa));
+                e.setOdd_fora(Double.parseDouble(odd_fora));
+                e.setOdd_empate(Double.parseDouble(odd_empate));
+                this.betess.registaEventoDesportivo(e);
                 JOptionPane.showMessageDialog(null, "Evento registado com sucesso.", "BetESS", JOptionPane.PLAIN_MESSAGE);
             }
         }
@@ -964,15 +943,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_regista_evento_buttonActionPerformed
 
     private void nova_equipa_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nova_equipa_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(nova_equipa_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(nova_equipa_elements);
         
         List<Liga> ligas = this.betess.getLigas();
         
@@ -984,15 +955,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_nova_equipa_buttonActionPerformed
 
     private void nova_liga_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nova_liga_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(nova_liga_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(nova_liga_elements);
     }//GEN-LAST:event_nova_liga_buttonActionPerformed
 
     private void regista_liga_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regista_liga_buttonActionPerformed
@@ -1047,15 +1010,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_regista_equipa_buttonActionPerformed
 
     private void jogadores_bloq_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jogadores_bloq_buttonActionPerformed
-        /* remoção de paineis anteriores */
-        options_panel.removeAll();
-        options_panel.repaint();
-        options_panel.revalidate();
-        
-        /* alocação do respetivo painel de opções */
-        options_panel.add(jogadores_bloqueados_elements);
-        options_panel.repaint();
-        options_panel.revalidate();
+        mostraPainel(jogadores_bloqueados_elements);
         
         DefaultTableModel model = (DefaultTableModel) jogadores_bloqueados_list.getModel();
         
@@ -1084,15 +1039,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
             int id_evento = (int) model.getValueAt(row, 0);
             this.betess.fechaEvento(id_evento, ganha_casa, ganha_fora, empate);
 
-            /* remoção de paineis anteriores */
-            options_panel.removeAll();
-            options_panel.repaint();
-            options_panel.revalidate();
-
-            /* alocação do respetivo painel de opções */
-            options_panel.add(eventos_desportivos_elements);
-            options_panel.repaint();
-            options_panel.revalidate();
+            mostraPainel(eventos_desportivos_elements);
         }
         else {
             JOptionPane.showMessageDialog(null, "Existem campos do formulário não preenchidos.", "Erro!", ERROR_MESSAGE);

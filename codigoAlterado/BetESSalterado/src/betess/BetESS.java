@@ -103,8 +103,8 @@ public class BetESS {
         this.database.registaJogador(j);
     }
     
-    public void registaAposta(double quantia, int id_evento, String id_jogador, boolean ganha_casa, boolean ganha_fora, boolean empate){
-        this.database.registaAposta(quantia, id_evento, id_jogador, ganha_casa, ganha_fora, empate);
+    public void registaAposta(Aposta a){
+        this.database.registaAposta(a);
     }
     
     public void atualizaSaldo(double creditos, String id_jogador){
@@ -132,8 +132,8 @@ public class BetESS {
         this.database.removeNotificacao(id_utilizador, id_aposta);
     }
             
-    public void registaEventoDesportivo(String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double odd_empate){
-        this.database.registaEventoDesportivo(equipa_casa, equipa_fora, odd_casa, odd_fora, odd_empate);
+    public void registaEventoDesportivo(EventoDesportivo e){
+        this.database.registaEventoDesportivo(e);
     }
     
     public Map<Integer, EventoDesportivo> getEventosDesportivos(){

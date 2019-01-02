@@ -22,7 +22,7 @@ public class EventoDesportivo implements Serializable{
     private double odd_fora;
     private double odd_empate;
 
-    public EventoDesportivo(int id_evento, String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double empate) {
+    /*public EventoDesportivo(int id_evento, String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double empate) {
         this.id_evento = id_evento;
         this.equipa_casa = equipa_casa;
         this.equipa_fora = equipa_fora;
@@ -33,6 +33,19 @@ public class EventoDesportivo implements Serializable{
         this.odd_casa = odd_casa;
         this.odd_fora = odd_fora;
         this.odd_empate = empate;
+    }*/
+    
+    public EventoDesportivo(){
+        this.id_evento = -1;
+        this.equipa_casa = "None";
+        this.equipa_fora = "None";
+        this.estado = "Aberto";
+        this.ganha_casa = false;
+        this.ganha_fora = false;
+        this.empate = false;
+        this.odd_casa = -1;
+        this.odd_fora = -1;
+        this.odd_empate = -1;
     }
 
     public EventoDesportivo(EventoDesportivo ev){
@@ -90,10 +103,34 @@ public class EventoDesportivo implements Serializable{
     public double getOdd_empate() {
         return odd_empate;
     }
+
     
     
     
+    public void setId_evento(int id_evento) {
+        this.id_evento = id_evento;
+    }
+
+    public void setEquipa_casa(String equipa_casa) {
+        this.equipa_casa = equipa_casa;
+    }
+
+    public void setEquipa_fora(String equipa_fora) {
+        this.equipa_fora = equipa_fora;
+    }
+
+    public void setOdd_casa(double odd_casa) {
+        this.odd_casa = odd_casa;
+    }
+
+    public void setOdd_fora(double odd_fora) {
+        this.odd_fora = odd_fora;
+    }
+
     /* SETTERS */
+    public void setOdd_empate(double odd_empate) {
+        this.odd_empate = odd_empate;
+    }
 
     public void setEstado(String estado) {
         this.estado = estado;
