@@ -42,7 +42,6 @@ public class Aposta implements Serializable{
         this.estado = ap.getEstado();           
     }
     
-    
 
     /* GETTERS */
     public int getId_aposta() {
