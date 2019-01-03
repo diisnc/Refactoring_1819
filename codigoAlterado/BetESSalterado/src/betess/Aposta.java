@@ -19,17 +19,6 @@ public class Aposta implements Serializable{
     private boolean ganha_fora;
     private boolean empate;
     private String estado;
-
-    /*public Aposta(int id_aposta, double quantia, int id_evento, String id_jogador, boolean ganha_casa, boolean ganha_fora, boolean empate) {
-        this.id_aposta = id_aposta;
-        this.quantia = quantia;
-        this.id_evento = id_evento;
-        this.id_jogador = id_jogador;
-        this.ganha_casa = ganha_casa;
-        this.ganha_fora = ganha_fora;
-        this.empate = empate;
-        this.estado = "Não paga";
-    }*/
     
     public Aposta(){
         this.id_aposta = -1;

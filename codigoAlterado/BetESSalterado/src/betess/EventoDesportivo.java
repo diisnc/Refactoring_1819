@@ -21,19 +21,6 @@ public class EventoDesportivo implements Serializable{
     private double odd_casa;
     private double odd_fora;
     private double odd_empate;
-
-    /*public EventoDesportivo(int id_evento, String equipa_casa, String equipa_fora, double odd_casa, double odd_fora, double empate) {
-        this.id_evento = id_evento;
-        this.equipa_casa = equipa_casa;
-        this.equipa_fora = equipa_fora;
-        this.estado = "Aberto";
-        this.ganha_casa = false;
-        this.ganha_fora = false;
-        this.empate = false;
-        this.odd_casa = odd_casa;
-        this.odd_fora = odd_fora;
-        this.odd_empate = empate;
-    }*/
     
     public EventoDesportivo(){
         this.id_evento = -1;

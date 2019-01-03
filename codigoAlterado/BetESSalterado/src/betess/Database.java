@@ -215,9 +215,9 @@ public class Database implements Serializable{
         this.apostas.remove(id);
     }
     
-        public void atualizaSaldoAposta(EventoDesportivo e, Aposta a, double saldo){
+    public double atualizaSaldoAposta(EventoDesportivo e, Aposta a, double saldo){
         double odd = e.getOdd_casa();
-        saldo += odd * a.getQuantia();
+        return saldo += odd * a.getQuantia();
     }
     
     public void lancaNotificacao(Aposta a, double balanco, Jogador jogador){
@@ -226,9 +226,10 @@ public class Database implements Serializable{
         registaJogador(jogador);
     }
     
-    public void atualizaDadosAposta(Aposta a){
+    public Aposta atualizaDadosAposta(Aposta a){
         a.setEstado("Paga");
         atualizaAposta(a);
+        return a;
     }
     
     public boolean verificaAposta(EventoDesportivo e, Aposta a){
@@ -237,21 +238,23 @@ public class Database implements Serializable{
                e.getEmpate() == a.getEmpate();
     }
     
-    public void trataAposta(EventoDesportivo e, Aposta a, double saldo){   
+    public double trataAposta(EventoDesportivo e, Aposta a, double saldo){   
         
         if (verificaAposta(e, a)) {
             
             if (e.getGanha_casa()){
-                    atualizaSaldoAposta(e, a, saldo);
+                saldo = atualizaSaldoAposta(e, a, saldo);
             }
             else if (e.getGanha_fora()){
-                atualizaSaldoAposta(e, a, saldo);
+                saldo = atualizaSaldoAposta(e, a, saldo);
 
             }
             else if (e.getEmpate()){
-                atualizaSaldoAposta(e, a, saldo);
+                saldo = atualizaSaldoAposta(e, a, saldo);
             }
         }
+        
+        return saldo;
     }
     
     public void trataApostasEvento(EventoDesportivo e){
@@ -263,9 +266,9 @@ public class Database implements Serializable{
                 double saldo = j.getSaldo();
                 double saldo_ant = saldo;
                 
-                trataAposta(e, a, saldo);
+                saldo = trataAposta(e, a, saldo);
                 
-                atualizaDadosAposta(a);
+                a = atualizaDadosAposta(a);
                 
                 /* lançamento de notificações */
                 lancaNotificacao(a, saldo - saldo_ant, j);
