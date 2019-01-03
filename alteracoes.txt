@@ -12,7 +12,7 @@ FORMATO :  																				|
 <NOTAS> 																				|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 1: (34 e 117 FEITO)
+ALTERAÇÃO 1: FEITO
 
 <NOME CLASSE ORIGINAL> Aposta
 <LINHA ORIGINAL> 23, 34(novo dead code), 117
@@ -73,11 +73,11 @@ ALTERAÇÃO 4: FEITA 																		|
  																						|
 ----------------------------------------------------------------------------------------
 
-ALTERAÇÃO 5: (40 e 139 FEITO)
+ALTERAÇÃO 5: FEITO
 
 <NOME CLASSE ORIGINAL> EventoDesportivo
 <LINHA ORIGINAL> 26, 40(novo dead code), 139
-<NOME TESTE> 
+<NOME TESTE> s
 <CODE SMELL> bloaters
 <SUBTIPO CODE SMELL> long parameter list
 <TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
