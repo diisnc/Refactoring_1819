@@ -790,7 +790,8 @@ public class AreaCliente extends javax.swing.JFrame {
                     a.setId_jogador(user);
                     a.setGanha_casa(casa_selected);
                     a.setGanha_fora(fora_selected);
-                    a.setEmpate(empate_selected);
+                    a.setEmpate(empate_selected);        
+                    this.betess.registaAposta(a);
                     
                     JOptionPane.showMessageDialog(null, "Aposta registada com sucesso.", "BetESS", JOptionPane.PLAIN_MESSAGE);
                 }
@@ -820,6 +821,8 @@ public class AreaCliente extends javax.swing.JFrame {
         
         DecimalFormat dc = new DecimalFormat("0.00");
         
+        System.out.println("Casa: " + odd_casa * Double.parseDouble(quantia_field.getText()));
+        
         ganhos_field.setText(dc.format(odd_casa * Double.parseDouble(quantia_field.getText())));
     }//GEN-LAST:event_casa_buttonActionPerformed
 
@@ -831,7 +834,9 @@ public class AreaCliente extends javax.swing.JFrame {
         
         DecimalFormat dc = new DecimalFormat("0.00");
         
-        ganhos_field.setText(dc.format(Double.toString(odd_fora * Double.parseDouble(quantia_field.getText()))));
+        System.out.println("fora: " + odd_fora * Double.parseDouble(quantia_field.getText()));
+        
+        ganhos_field.setText(dc.format(odd_fora * Double.parseDouble(quantia_field.getText())));
     }//GEN-LAST:event_fora_buttonActionPerformed
 
     private void empate_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empate_buttonActionPerformed
@@ -842,7 +847,9 @@ public class AreaCliente extends javax.swing.JFrame {
         
         DecimalFormat dc = new DecimalFormat("0.00");
         
-        ganhos_field.setText(dc.format(Double.toString(odd_empate * Double.parseDouble(quantia_field.getText()))));
+        System.out.println("empate: " + odd_empate * Double.parseDouble(quantia_field.getText()));
+        
+        ganhos_field.setText(dc.format(odd_empate * Double.parseDouble(quantia_field.getText())));
     }//GEN-LAST:event_empate_buttonActionPerformed
 
     private void saldo_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saldo_fieldActionPerformed
