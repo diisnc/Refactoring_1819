@@ -11,24 +11,24 @@ FORMATO :  																				|
 <VANTAGENS> 															       			|
 <NOTAS> 																				|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 1: FEITO
-
-<NOME CLASSE ORIGINAL> Aposta
-<LINHA ORIGINAL> 23, 34(novo dead code), 117
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
-					  aceder aos dados do objeto (preserve hole object ou Introduce 
-					  Parameter Object(construtor))
-<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não 
-			foi visto antes
-<NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe 
-		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
+																						|
+ALTERAÇÃO 1: FEITO --- RELATORIO 														|
+																						|
+<NOME CLASSE ORIGINAL> Aposta 															|
+<LINHA ORIGINAL> 23, 34(novo dead code), 117 											|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor  		|
+					  aceder aos dados do objeto (preserve hole object ou Introduce  	|
+					  Parameter Object(construtor)) 									|
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que não  	|
+			foi visto antes 															|
+<NOTAS> nas linhas 23 e 34 é devido ao construtor. ver se dá para dividir a classe 		|
+		aposta (exemplo: dividir classe pessoa em pessoa e contactos) 					|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 2: FEITA																		|
+ALTERAÇÃO 2: FEITA --- RELATORIO														|
  																						|
 <NOME CLASSE ORIGINAL> Aposta  															|
 <LINHA ORIGINAL> 14 -> 21 																|
@@ -43,7 +43,7 @@ ALTERAÇÃO 2: FEITA																		|
 																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 3: FEITA 																		|
+ALTERAÇÃO 3: FEITA --- RELATORIO														|
  																						|			
 <NOME CLASSE ORIGINAL> Aposta  															|
 <LINHA ORIGINAL> 84, 88, 92, 96 														|
@@ -58,7 +58,7 @@ ALTERAÇÃO 3: FEITA 																		|
  																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 4: FEITA 																		|
+ALTERAÇÃO 4: FEITA --- RELATORIO														|
 																						|
 <NOME CLASSE ORIGINAL> Equipa 															|
 <LINHA ORIGINAL> 36, 40 																|
@@ -72,25 +72,25 @@ ALTERAÇÃO 4: FEITA 																		|
 <NOTAS> 																				|
  																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 5: FEITO
-
-<NOME CLASSE ORIGINAL> EventoDesportivo
-<LINHA ORIGINAL> 26, 40(novo dead code), 139
-<NOME TESTE> s
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor 
-					  aceder aos dados do objeto (preserve hole object ou Introduce 
-					  Parameter Object(construtor))
-<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que 
-			não foi visto antes
-<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe 
-		aposta (exemplo: dividir classe pessoa em pessoa e contactos)
-
+																						|
+ALTERAÇÃO 5: FEITO --- RELATORIO														|
+ 																						|
+<NOME CLASSE ORIGINAL> EventoDesportivo 												|
+<LINHA ORIGINAL> 26, 40(novo dead code), 139 											|
+<NOME TESTE> 																			| 							
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TECNICA REFACTORING> reunir a informação no objeto aposta e dentro do construtor  		|
+					  aceder aos dados do objeto (preserve hole object ou Introduce  	|
+					  Parameter Object(construtor)) 									|
+<VANTAGENS> código mais legível e mais curto; pode eliminar código duplicado que  		|
+			não foi visto antes 														|
+<NOTAS> nas linhas 26 e 40 é devido ao construtor. ver se dá para dividir a classe  	|
+		aposta (exemplo: dividir classe pessoa em pessoa e contactos)					|
+																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 6: FEITA																		|
+ALTERAÇÃO 6: FEITA --- RELATORIO														|
 																						|
 <NOME CLASSE ORIGINAL> EventoDesportivo													|
 <LINHA ORIGINAL> 14 																	|
@@ -105,7 +105,7 @@ ALTERAÇÃO 6: FEITA																		|
 																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 7: FEITA 																		|
+ALTERAÇÃO 7: FEITA --- RELATORIO														|
  																						|
 <NOME CLASSE ORIGINAL> EventoDesportivo 												|
 <LINHA ORIGINAL> 103, 107, 127, 131, 135 												|
@@ -120,7 +120,7 @@ ALTERAÇÃO 7: FEITA 																		|
  																						|	
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 8: FEITO 																		|
+ALTERAÇÃO 8: FEITO 	--- RELATORIO														|
  																						|
 <NOME CLASSE ORIGINAL> Jogador 															|
 <LINHA ORIGINAL> 32(novo dead code), 119 												|
@@ -137,7 +137,7 @@ ALTERAÇÃO 8: FEITO 																		|
  																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 9: FEITA 													 					|
+ALTERAÇÃO 9: FEITA --- RELATORIO									 					|
 																						|
 <NOME CLASSE ORIGINAL> Jogador 															|
 <LINHA ORIGINAL> 14 																	|
@@ -152,7 +152,7 @@ ALTERAÇÃO 9: FEITA 													 					|
 																						|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 10: FEITA 																	|
+ALTERAÇÃO 10: FEITA --- RELATORIO														|
  																						|
 <NOME CLASSE ORIGINAL> Liga 															| 
 <LINHA ORIGINAL> 24																		|
@@ -167,7 +167,7 @@ ALTERAÇÃO 10: FEITA 																	|
  																					 	|
 ----------------------------------------------------------------------------------------
 																						|
-ALTERAÇÃO 11: FEITA 																	|
+ALTERAÇÃO 11: FEITA - RELATORIO															|
  																						|
 <NOME CLASSE ORIGINAL> Notificação 														|
 <LINHA ORIGINAL> 48, 52 																|
@@ -181,43 +181,43 @@ ALTERAÇÃO 11: FEITA 																	|
 <NOTAS> 																				|
  																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 12:
-
-<NOME CLASSE ORIGINAL> BetESS
-<LINHA ORIGINAL> 105
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
-<NOTAS>
-
+																						|
+ALTERAÇÃO 12: FEITO --- RELATORIO 														|
+ 																						|
+<NOME CLASSE ORIGINAL> BetESS 															|
+<LINHA ORIGINAL> 105 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object 				|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 13:
-
-<NOME CLASSE ORIGINAL> BetESS
-<LINHA ORIGINAL> 134
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
-<VANTAGENS>
-<NOTAS>
-
+																						|
+ALTERAÇÃO 13: FEITO --- RELATORIO 														|
+																						|
+<NOME CLASSE ORIGINAL> BetESS 															|
+<LINHA ORIGINAL> 134 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object 				|
+<VANTAGENS> 																			|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 14:
-
+																						|
+ALTERAÇÃO 14:		REMOVER 															|
+																						|
 <NOME CLASSE ORIGINAL> BetESS (podemos remover este pois fala em mais do que 3/4 e temos 4)
-<LINHA ORIGINAL> 155
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object + replace with query + decompose conditional
-<VANTAGENS>
-<NOTAS>
-
+<LINHA ORIGINAL> 155																	|
+<NOME TESTE> 																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list	 											|
+<TECNICA REFACTORING> preserve whole object + replace with query + decompose conditional|
+<VANTAGENS> 																			|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 15:
@@ -273,31 +273,31 @@ ALTERAÇÃO 18:
 <NOTAS>
 
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 19:
-
-<NOME CLASSE ORIGINAL> Database
-<LINHA ORIGINAL> 112
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
-<VANTAGENS>
-<NOTAS>
-
+																						|
+ALTERAÇÃO 19: FEITO --- RELATORIO 														|
+																						|
+<NOME CLASSE ORIGINAL> Database 														|
+<LINHA ORIGINAL> 112 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object 				|
+<VANTAGENS> 																			|
+<NOTAS> 																				|
+ 																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 20:
-
-<NOME CLASSE ORIGINAL> Database
-<LINHA ORIGINAL> 147
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long parameter list
-<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object
-<VANTAGENS>
-<NOTAS>
-
+																						|
+ALTERAÇÃO 20: FEITO --- RELATORIO 														|
+ 																						|
+<NOME CLASSE ORIGINAL> Database 														|
+<LINHA ORIGINAL> 147 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long parameter list 												|
+<TECNICA REFACTORING> preserve whole object ou Introduce Parameter Object 				|
+<VANTAGENS> 																			|
+<NOTAS> 																				|
+																						|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 21:
