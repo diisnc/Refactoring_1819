@@ -908,13 +908,17 @@ public class AreaAdministrador extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_registar_evento_buttonActionPerformed
 
+    private boolean verificaDados(){
+        return !combo_casa.getSelectedItem().toString().isEmpty() &&
+               !combo_fora.getSelectedItem().toString().isEmpty() &&
+               !odd_casa_field.getText().isEmpty() &&
+               !odd_fora_field.getText().isEmpty() &&
+               !odd_empate_field.getText().isEmpty();
+    }
+    
     private void regista_evento_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regista_evento_buttonActionPerformed
         
-        if (!combo_casa.getSelectedItem().toString().isEmpty() &&
-            !combo_fora.getSelectedItem().toString().isEmpty() &&
-            !odd_casa_field.getText().isEmpty() &&
-            !odd_fora_field.getText().isEmpty() &&
-            !odd_empate_field.getText().isEmpty()){
+        if (verificaDados()){
 
             String c_casa = combo_casa.getSelectedItem().toString();                                                     
             String c_fora = combo_fora.getSelectedItem().toString();
@@ -958,6 +962,17 @@ public class AreaAdministrador extends javax.swing.JFrame {
         mostraPainel(nova_liga_elements);
     }//GEN-LAST:event_nova_liga_buttonActionPerformed
 
+    private boolean permite_liga(List<Liga> ligas, String nome_liga){
+        boolean permite_liga = true;
+            for (Liga l: ligas){
+                if (l.getNome().equals(nome_liga)){
+                    permite_liga = false;
+                    break;
+                }
+            }
+        return permite_liga;
+    }
+    
     private void regista_liga_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regista_liga_buttonActionPerformed
         
         if (!nome_liga_field.getText().isEmpty()){
@@ -966,14 +981,7 @@ public class AreaAdministrador extends javax.swing.JFrame {
 
             String nome_liga = nome_liga_field.getText();
 
-            boolean permite_liga = true;
-            for (Liga l: ligas){
-                if (l.getNome().equals(nome_liga)){
-                    permite_liga = false;
-                    break;
-                }
-            }
-            if (permite_liga){
+            if (permite_liga(ligas, nome_liga)){
                 Liga l = new Liga(nome_liga);
                 this.betess.registaLiga(l);
             }

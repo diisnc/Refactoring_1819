@@ -2,3 +2,5 @@
 /original/BetESSoriginal/dist/
 /codigoAlterado/BetESSalterado/build/
 .DS_Store
+/codigoOriginal/BetESSoriginal/build/
+/codigoAlterado/BetESSalterado/dist/

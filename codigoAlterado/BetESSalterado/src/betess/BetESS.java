@@ -17,7 +17,7 @@ public class BetESS {
     /* Contrutor BetESS */
     public BetESS(){
         Database d = null;
-        savefile(d);
+        d = readfile(d);
         if (d == null){
             System.out.println("Estado da aplicação iniciado.");
             this.database = new Database();
@@ -28,7 +28,7 @@ public class BetESS {
         }
     }
     
-    public void savefile(Database d){
+    public Database readfile(Database d){
         try {
             FileInputStream fileIn = new FileInputStream("/tmp/database");
             ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -38,6 +38,7 @@ public class BetESS {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+        return d;
     }
     
     public void save() {
