@@ -219,20 +219,20 @@ ALTERAÇÃO 14:		REMOVER 															|
 <NOTAS> 																				|
  																						|
 ----------------------------------------------------------------------------------------
-
-ALTERAÇÃO 15:
-
-<NOME CLASSE ORIGINAL> BetESS
-<LINHA ORIGINAL> 18
-<NOME TESTE> 
-<CODE SMELL> bloaters
-<SUBTIPO CODE SMELL> long method
-<TECNICA REFACTORING> extract method / replace with query
-<VANTAGENS> melhoria da legibilidade de código principalmente mas também eliminação de 
-			possíveis locais de bugs (uma vez que o método se pode tornar confuso devido
-			à sua dimensão)
-<NOTAS>
-
+																						|
+ALTERAÇÃO 15: FEITO --- RELATORIO														|
+ 																						|
+<NOME CLASSE ORIGINAL> BetESS 															|
+<LINHA ORIGINAL> 18 																	|
+<NOME TESTE>  																			|
+<CODE SMELL> bloaters 																	|
+<SUBTIPO CODE SMELL> long method 														|
+<TECNICA REFACTORING> extract method  													|
+<VANTAGENS> melhoria da legibilidade de código principalmente mas também eliminação de  |
+			possíveis locais de bugs (uma vez que o método se pode tornar confuso devido|
+			à sua dimensão) 															|
+<NOTAS> 																				|
+																						|
 ----------------------------------------------------------------------------------------
 
 ALTERAÇÃO 16:
